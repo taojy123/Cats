@@ -34,6 +34,9 @@ def Command1_Cmd(event=None):
         display += u"\n体重：" +  columns[3]
         display += u"\n毛长：" +  columns[4]
         Label2["text"] = display
+    else:
+        # 如果没有相应记录 则提示无记录
+        Label2["text"] = u"未查到该数据"
 
 
 # 创建图形界面布局
